@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: #6C7A89;
+}
+
+.container {
+    position: absolute;
+    width: 25rem;
+    height: 30rem;
+    background: #426386;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.input_search {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 0.3rem;
+}
+
+.input_sch {
+    width: 18rem;
+    height: 2rem;
+}
+
+.input_search button {
+    width: 3rem;
+    height: 2rem;
+}
+
+.humidade_vento {
+    display: flex;
+}
