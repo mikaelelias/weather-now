@@ -1,48 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Now</title>
+    <title>Previsão do Tempo</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Open+Sans:wght@300;500;700&family=Poppins:wght@100;400&family=Roboto+Condensed:wght@300&family=Roboto:wght@700&family=Space+Grotesk:wght@500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
-        <h2>Check the weather of a city</h2>
-        <div class="input_search">
-            <input type="search" class="input_sch" placeholder="Enter the name of the city">
-            <button class="enter" onclick="clicou()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg></button>
+        <h1>Digite o nome de uma Cidade</h1>
+        <div class="search">
+            <input type="search" placeholder="Digite o nome da cidada">
+            <button><img class="icon_search" src="https://www.svgrepo.com/show/488200/find.svg" alt=""></button>
         </div>
-            
-        <div class="information">
-            <div class="maps-icons">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
-            </div>
-
-            <div class="tempo">
-                "João Pessoa"
-            </div>
-
-            <div time>
-                "Poucas Nuves"
-            </div>
-
-            <div class="humidade_vento">
-                <div>
-                    22% |
-                </div>
-
-                <div>
-                    wind
-                </div>
-            </div>
+        <h2>Tempo da Cidade</h2>
+        <p>32°C</p>
+        <div class="sky">
+            <img src="https://openweathermap.org/img/wn/04n.png" alt="icone_tempo">
+            <p>Nublado</p>
         </div>
+        <p>Umidade: 75%</p>
     </div>
+
 </body>
+
 </html>
