@@ -5,6 +5,8 @@ const key = "e7f4f52c71e0f15967cf64c30033356c"
 function  putting_screen(dados){
     document.querySelector(".city").innerHTML = "Tempo em " + dados.name;
     document.querySelector(".temperatura").innerHTML = dados.main.temp;
+
+    document.querySelector(".humidity").innerHTML = "Umidade: " + dados.main.humidity + "%";
 }
 
 // SEMPRE QUE FOR PEGAR OS DADOS DE UM SERVIDOR, É IMPORTANTE USAR FUNÇÕES ASSICRONAS- async //
