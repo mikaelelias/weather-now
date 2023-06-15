@@ -8,6 +8,7 @@ function  putting_screen(dados){
     document.querySelector(".text-forecast").innerHTML = dados.weather[0].description;
     document.querySelector(".humidity").innerHTML = "Umidade: " + dados.main.humidity + "%";
     document.querySelector(".img-forecast").src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png` 
+    document.querySelector(".text_information").innerHTML = "O tempo na cidade de " + dados.name + " é de " + Math.floor(dados.main.temp) + "°C" + " com " + dados.weather[0].description;
 }
 
 // SEMPRE QUE FOR PEGAR OS DADOS DE UM SERVIDOR, É IMPORTANTE USAR FUNÇÕES ASSICRONAS- async //
