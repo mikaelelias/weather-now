@@ -31,13 +31,23 @@ function click_search() {
     searchCity(city);
 }
 
-/*
-click_search.addEventlstener("keyup", (e) => {
-    if (e.cod === "Enter") {
-        const city = e.target.value;
 
-        searchCity(city);
+// CRIANDO INTERAÇÃO DO ENTER NO INPUT
 
-    }
+// Obtém o elemento de input
+const inputElement = document.querySelector(".input_search");
+
+// Adiciona o evento de escuta de teclado
+inputElement.addEventListener('keydown', function(event) {
+  // Verifica se a tecla pressionada é a tecla "Enter"
+  if (event.keyCode === 13) {
+    // Chame a função que lida com o evento
+    click_search()
+  }
 });
-*/
+
+// Função que lida com o pressionamento da tecla "Enter"
+function handleEnterPress() {
+  // Faça o que desejar com o input quando o "Enter" for pressionado
+  console.log('Enter pressionado!');
+}
