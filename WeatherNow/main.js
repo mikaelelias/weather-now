@@ -30,3 +30,14 @@ function click_search() {
 
     searchCity(city);
 }
+
+/*
+click_search.addEventlstener("keyup", (e) => {
+    if (e.cod === "Enter") {
+        const city = e.target.value;
+
+        searchCity(city);
+
+    }
+});
+*/
